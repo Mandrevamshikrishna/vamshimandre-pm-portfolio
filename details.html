@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vamshi Mandre · Portfolio</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- fades out on load so arriving from the ball's white flash is seamless -->
+  <div class="page-in" aria-hidden="true"></div>
+
+  <!-- ============ THE PAGE ============ -->
+  <main id="info" class="view is-active">
+
+    <!-- ambient sky: drifting clouds pinned to the top of the view -->
+    <div class="scene" aria-hidden="true">
+      <span class="cloud c1"></span>
+      <span class="cloud c2"></span>
+      <span class="cloud c3"></span>
+      <span class="cloud c4"></span>
+    </div>
+
+    <div class="site">
+
+      <div class="site-top">
+        <a href="index.html" class="pdx-back" aria-label="Back to grass">
+          <span class="pdx-back-arrow">←</span> Back to Grass
+        </a>
+      </div>
+
+      <!-- left: profile sidebar -->
+      <aside class="side">
+        <div class="side-tag"><span class="mini-ball"></span>Pokémon Details</div>
+        <div class="side-hero">
+          <!-- standing trainer: save your PNG as avatar.png in the project folder -->
+          <div class="side-shadow" aria-hidden="true"></div>
+          <img class="side-avatar" src="avatar.png" alt="Vamshi Mandre, pixel-art avatar"
+               onload="var p=document.getElementById('tcgPhoto'); if(p){p.style.display='none';}"
+               onerror="this.remove();" />
+          <div class="pdx-photo" id="tcgPhoto"><span>★</span></div>
+          <div class="side-stats" aria-hidden="true">
+            <span class="side-stat ht"><i>HT</i>5'4"</span>
+            <span class="side-stat wt"><i>WT</i>50kg</span>
+          </div>
+        </div>
+        <h1 class="side-name">Vamshi Mandre</h1>
+        <p class="side-role">AI/ML Graduate · LinkedIn (500+ connections)</p>
+        <p class="side-tagline">Building projects, solving problems, and growing through hands-on experience</p>
+
+        <div class="side-facts">
+          <span><i>📍</i>Hyderabad, India</span>
+        </div>
+
+        <div class="side-block">
+          <span class="side-label">Skills</span>
+          <div class="pdx-chips side-chips">
+            <span class="pdx-chip">Python</span>
+            <span class="pdx-chip">0→1 Products</span>
+            <span class="pdx-chip">User Research</span>
+            <span class="pdx-chip">Machine learning</span>
+            <span class="pdx-chip">NumPy &amp; pandas</span>
+            <span class="pdx-chip">SQL &amp; API</span>
+          </div>
+        </div>
+
+        <div class="side-block">
+          <span class="side-label">Links</span>
+          <div class="side-links">
+            <a href="https://www.linkedin.com/in/vamshimandre/" target="_blank" rel="noopener">LinkedIn <span>↗</span></a>
+            <a href="mailto:vamshimandre129@create.wtf">Email <span>↗</span></a>
+          </div>
+        </div>
+      </aside>
+
+      <!-- right: content (stacked sections) -->
+      <section class="main">
+
+        <!-- About -->
+        <section class="sec">
+          <h2 class="sec-title">About</h2>
+          <p class="pdx-lead">
+            I'm Vamshi Mandre, an AI / ML developer, reader, and occasional DIY engineer.
+          </p>
+          <p class="pdx-lead" style="margin-top:16px;">
+            I like making complicated things simple and finding humour in the mildly chaotic experience of
+            being an ambitious person who also just wants to sit at home, and read a book.
+          </p>
+          <p class="pdx-lead" style="margin-top:16px;">
+            Most of what I make lives somewhere between technology, creativity, work, adulthood, and
+            figuring out how the hell to have a life outside your job.
+          </p>
+          <p class="pdx-lead" style="margin-top:16px;">
+            Want to talk? You can reach me by emailing
+            <a href="mailto:vamshimandre129@create.wtf">vamshimandre129@create.wtf</a>.
+          </p>
+        </section>
+
+        <!-- Experience (company list ← → details) -->
+        <section class="sec">
+          <h2 class="sec-title">Fresher</h2>
+          <div class="xp" id="xp">
+            <div class="xp-tabs" role="tablist">
+              <button class="xp-co is-active" data-co="0">Bharath Internship</button>
+              <button class="xp-co" data-co="1">Personal Projects</button>
+              <button class="xp-co" data-co="2">AI/ML Intern</button>
+              <button class="xp-co" data-co="3">TKR College</button>
+            </div>
+            <div class="xp-details">
+              <div class="xp-detail is-active" data-co="0">
+                <h4>AI/ML Engineering <span>@ Bharath Internship</span></h4>
+                <p class="xp-date">Present · Hyderabad</p>
+                <ul>
+                  <li>Built AI/ML projects by applying machine learning concepts to real-world problems</li>
+                  <li>Worked on solution design, data preparation, model development, testing, and deployment</li>
+                  <li>Gained hands-on experience by continuously learning, experimenting, and improving my technical skills</li>
+                </ul>
+              </div>
+              <div class="xp-detail" data-co="1">
+                <h4>Machine Learning Developer <span>@ Personal Projects</span></h4>
+                <p class="xp-date">May 2021 - Aug 2024 · Hyderabad</p>
+                <ul>
+                  <li>Helped turn ideas into practical products through research, experimentation, and continuous improvement.</li>
+                  <li>Worked across planning, problem-solving, and execution while learning how to build products from the ground up.</li>
+                </ul>
+              </div>
+              <div class="xp-detail" data-co="2">
+                <h4>Artificial Intelligence &amp; Machine Learning Intern</h4>
+                <p class="xp-date">2025 - Present · Hyderabad</p>
+                <ul>
+                  <li>Developed a machine learning system to detect suspicious and fraudulent smart-card transactions.</li>
+                  <li>Performed data preprocessing and feature engineering to identify patterns in transaction data.</li>
+                  <li>Compared Random Forest and Logistic Regression models using Precision, Recall, F1-Score, and Confusion Matrix.</li>
+                </ul>
+              </div>
+              <div class="xp-detail" data-co="3">
+                <h4>AI/ML Student, Aspiring AI Engineer <span>@ TKR Engineering College</span></h4>
+                <p class="xp-date">Aug 2021 - Jul 2024 · Hyderabad</p>
+                <ul>
+                  <li>Learned the fundamentals: Python, Machine Learning, Deep Learning and API docs.</li>
+                  <li>Continuously experimenting, building, and improving my technical skills.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </section>
+    </div>
+
+    <!-- playful footer: drop a Pokémon into the crowd -->
+    <footer class="pfoot">
+      <div class="pfoot-cta">
+        <p class="pfoot-title">Gotta catch 'em all</p>
+        <p class="pfoot-sub">Every visitor leaves a Pokémon behind. Add yours to the crowd.</p>
+        <button id="pfootBtn" class="pfoot-btn">＋ Drop a Pokémon</button>
+        <span id="pfootCount" class="pfoot-count">…</span>
+      </div>
+      <div class="pfoot-stage" id="pfootStage"></div>
+      <div class="pfoot-ground" aria-hidden="true"></div>
+    </footer>
+
+    <!-- legal / fan-work disclaimer -->
+    <footer class="legal">
+      <p>Pokémon © Nintendo, Game&nbsp;Freak &amp; The&nbsp;Pokémon&nbsp;Company. An unofficial fan project.</p>
+      <p>© 2026 Vamshi Mandre. Writing, art &amp; code are mine, made with love. No personal data collected.</p>
+      <p class="legal-sign">VamshiMandre 💛</p>
+    </footer>
+  </main>
+
+  <script src="script.js?v=32"></script>
+</body>
+</html>
